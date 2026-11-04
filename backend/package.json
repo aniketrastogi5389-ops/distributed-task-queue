@@ -1,0 +1,28 @@
+{
+  "name": "distributed-task-queue",
+  "version": "1.0.0",
+  "description": "A distributed task queue system with priority queues, retry logic, DLQ, and real-time monitoring — mini AWS SQS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "worker": "node src/workers/worker.js",
+    "worker:dev": "node --watch src/workers/worker.js"
+  },
+  "keywords": [
+    "task-queue",
+    "distributed-systems",
+    "redis",
+    "priority-queue",
+    "dead-letter-queue"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "uuid": "^11.1.0"
+  }
+}
